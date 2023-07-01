@@ -56,7 +56,7 @@ const Signup = () => {
                     name="name"
                     label="Name"
                     error={errors.name && touched.name}
-                    helperText={<ErrorMessage name="name" />}
+                    helpertext={<ErrorMessage name="name" />}
                 />
            </Box>
           <Box sx={{margin:'5px 0px',padding:'10px'}}>
@@ -68,7 +68,7 @@ const Signup = () => {
                 multiline
                 rows={4}
                 error={errors.address && touched.address}
-                helperText={errors.address && touched.address ? errors.address : ''}
+                helpertext={errors.address && touched.address ? errors.address : ''}
             />
            </Box>
 
@@ -81,7 +81,7 @@ const Signup = () => {
                 label="Country"
                 
                 error={errors.country && touched.country}
-                helperText={errors.country && touched.country ? errors.country : ''}
+                helpertext={errors.country && touched.country ? errors.country : ''}
             >
                 {countries.map((country) => (
                 <MenuItem key={country.value} value={country.value}>
@@ -115,7 +115,7 @@ const Signup = () => {
                 multiple
                 label="Hobbies"
                 error={errors.hobbies && touched.hobbies}
-                helperText={errors.hobbies && touched.hobbies ? errors.hobbies : ''}
+                helpertext={errors.hobbies && touched.hobbies ? errors.hobbies : ''}
             >
                 {hobbies.map((hobby) => (
                 <MenuItem key={hobby.value} value={hobby.value}>
